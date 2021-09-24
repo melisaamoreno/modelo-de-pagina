@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(13, 13, 32);
+    color: white;
+    height: 3em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 1.25em;
+}
+.menu a{
+    display: inline;
+    border: white solid 1px;
+    text-align: center;
+    padding: 0.3125em;
+    margin: 0.625em;
+}
+.banner{
+    background-image: url("header-img.jpg");
+    height: 12.5em;
+    width: 100%;
+    background-position: 50%;
+    text-align: center;
+    color:white;
+}
+.banner h1{
+    padding: 100px;
+}
+.green-title{
+  color: green;
+}
+.blue-title{
+  color: rgb(10, 10, 119);
+}
+.red-title{
+  color: rgb(155, 8, 8);
+}
+.articles{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 26%;
+    background-color: gainsboro;
+    text-align: center;
+    margin: 15px;
+}
+.box p, h2{
+    padding: 10px;
+}
+.box2{
+    width: 40%;
+}
+img{
+    max-height: 200px;
+    width: 100%;
+}
+.button{
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.green{
+    background-color:green;
+    color: white;
+}
+.blue{
+    background-color: rgb(10, 10, 119);
+    color: white;
+}
+.red{
+    background-color: rgb(155, 8, 8);
+    color: white;
+}
+.big{
+    margin-top: 30px;
+    width: 86%;
+    margin: 80px;
+}
+.big img{
+    max-height: 500px;
+}
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .contact-title{
+  text-align: center;
+}
+.contact-form p{
+  text-align: center;
+  background-color: gainsboro;
+  width: 50%;
+  margin: auto;
+}
+.datos{
+ background-color: gainsboro;
+  margin:auto;
+  margin-top: 40px;
+  width: 40%;
+}
+.inputs{
+  margin: 20px;
+  width: 30%; 
+  
+}
+.text{
+  margin: 20px;
+  width: 30%;
+}
+
+input{
+  margin: 5px;
+  height: 30px;
+}
+.send{
+  margin: 5px;
+  padding: 5px;
+}
+/******* media query *********/
+@media(max-width: 600px){
+  .articles{
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    visibility: hidden;
+  }
+  .box big{
+    align-items: center;
+    justify-content: center;
+  }
+  .form{
+    align-items: center;
+  }
+}
